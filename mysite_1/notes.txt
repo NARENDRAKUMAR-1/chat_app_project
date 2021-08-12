@@ -1,0 +1,3 @@
+start the heroku redis command each time before runserver
+
+rm -rf .git ... great tool tp revert back the whole .git session
