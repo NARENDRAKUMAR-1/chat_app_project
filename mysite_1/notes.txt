@@ -7,3 +7,7 @@ we will only see the messages which are there after we join
 runtime.txt
 
 gunicorn for wsgi
+\
+
+web: daphne chat_1.asgi:application --port $PORT --bind 0.0.0.0 -v2
+worker: python manage.py runworker channels --settings=.mysite_1.settings -v2
